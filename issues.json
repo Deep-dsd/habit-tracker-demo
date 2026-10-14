@@ -1,0 +1,76 @@
+[
+  {
+    "title": "Habits disappear after reload in Safari private mode",
+    "labels": ["bug"],
+    "body": "**Steps**\n1. Open the app in a Safari private window.\n2. Add a habit called \"Read 20 pages\".\n3. Reload the page.\n\n**Expected**\nThe habit is still there, or the app tells me that it cannot save in private mode.\n\n**Actual**\nThe list is empty and there is no message.",
+    "close": null
+  },
+  {
+    "title": "A habit can be marked done several times on the same day",
+    "labels": ["bug"],
+    "body": "**Steps**\n1. Add a habit.\n2. Click \"Done today\" three times.\n\n**Expected**\nThe habit counts once for today.\n\n**Actual**\nIt shows \"done 3 times\". This will also break any streak counter we add later.",
+    "close": null
+  },
+  {
+    "title": "Add a streak counter next to each habit",
+    "labels": ["enhancement"],
+    "body": "Show how many days in a row each habit has been done, up to today.\n\n**Done when**\n- The number is shown next to the habit name.\n- Missing a day resets it to 0.\n- A habit that is not yet done today still shows yesterday's streak.\n\nNote: this depends on the bug about marking a habit done twice.",
+    "close": null
+  },
+  {
+    "title": "Daily reminder at a time I choose",
+    "labels": ["enhancement"],
+    "body": "I forget to tick my habits. Let me pick a reminder time for each habit and show a browser notification.\n\nNeeded before exam week starts on 2 Nov 2026, because that is when most users will need it.",
+    "close": null
+  },
+  {
+    "title": "Dark mode",
+    "labels": ["enhancement"],
+    "body": "The page is very bright at night. Please add a dark mode that follows the system setting.",
+    "close": null
+  },
+  {
+    "title": "Add a dark theme",
+    "labels": ["enhancement"],
+    "body": "A dark theme would be easier on the eyes.",
+    "close": "not planned",
+    "close_comment": "Duplicate of the issue titled \"Dark mode\"."
+  },
+  {
+    "title": "Export habits to a CSV file",
+    "labels": ["enhancement"],
+    "body": "Add an Export button that downloads a CSV with one row per habit and one column per date.\n\n**Done when**\n- The file opens correctly in a spreadsheet.\n- Habit names with commas are handled.",
+    "close": null
+  },
+  {
+    "title": "README has no setup or contribution steps",
+    "labels": ["documentation"],
+    "body": "New contributors do not know how to run the app, where the code lives or how to report a bug. Add short sections for all three.",
+    "close": null
+  },
+  {
+    "title": "The app feels slow sometimes",
+    "labels": ["question"],
+    "body": "Sometimes it takes a while. Can we make it faster?",
+    "close": null
+  },
+  {
+    "title": "Add automated tests for storage.js",
+    "labels": ["enhancement", "good first issue"],
+    "body": "loadHabits and saveHabits have no tests. Cover at least: nothing saved yet, saved data comes back unchanged, and broken JSON in storage returns an empty list.",
+    "close": null
+  },
+  {
+    "title": "Typo in the page title",
+    "labels": ["bug", "good first issue"],
+    "body": "The browser tab says \"Habbit Tracker\".",
+    "close": "completed",
+    "close_comment": "Fixed in the latest version."
+  },
+  {
+    "title": "Sync habits across my phone and laptop",
+    "labels": ["enhancement"],
+    "body": "I use the app on two devices and the habits are different on each. Add accounts and sync.\n\nThis is large. It needs sign-in, a database and an API. Needed before the college fest on 15 Dec 2026.",
+    "close": null
+  }
+]
