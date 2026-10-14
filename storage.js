@@ -11,3 +11,7 @@ function loadHabits() {
 function saveHabits(habits) {
   localStorage.setItem(STORAGE_KEY, JSON.stringify(habits));
 }
+
+if (typeof module !== "undefined" && module.exports) {
+  module.exports = { loadHabits, saveHabits, STORAGE_KEY };
+}

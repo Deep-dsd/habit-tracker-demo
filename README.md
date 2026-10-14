@@ -11,7 +11,18 @@ Open `index.html` in your browser. There is nothing to install.
 - `index.html`: the page
 - `app.js`: behaviour (add a habit, mark it done)
 - `storage.js`: saves and loads habits with localStorage
+- `storage.test.js`: automated unit tests for storage.js
 - `style.css`: styling
+
+## Tests
+
+Run the automated tests using Node's built-in test runner (no third-party dependencies required):
+
+```bash
+npm test
+# or
+node --test
+```
 
 ## Practising with the issues
 
