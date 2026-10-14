@@ -1,0 +1,8 @@
+{
+  "name": "habit-tracker-demo",
+  "version": "1.0.0",
+  "description": "A tiny habit tracker demo",
+  "scripts": {
+    "test": "node --test"
+  }
+}
